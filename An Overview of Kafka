@@ -1,4 +1,5 @@
  1. An Overview of Kafka
+http://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.3.0/bk_kafka-user-guide/content/kafka-overview.html
 
 Kafka operates on streams of messages. Four main components move messages in and out of Kafka:
  

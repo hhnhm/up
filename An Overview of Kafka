@@ -1,6 +1,30 @@
  1. An Overview of Kafka
 http://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.3.0/bk_kafka-user-guide/content/kafka-overview.html
 
+Apache Kafka is a fast, scalable, durable, fault-tolerant publish-subscribe messaging system.
+
+Common use cases include:
+
+    Messaging
+
+    Website activity tracking
+
+    Metrics collection and monitoring
+
+    Log aggregation
+
+    Stream processing
+
+    Event sourcing
+
+    Commit logs
+
+Kafka works with Apache Storm and Apache Spark for real-time analysis and rendering of streaming data. The combination of messaging and processing technologies enables stream processing at linear scale.
+
+For example, Apache Storm ships with full support for Kafka 0.8.2.1 as a data source, using Storm’s core API or the higher-level, micro-batching Trident API. Storm’s Kafka integration also includes support for writing data to Kafka, which enables complex data flows between components in a Hadoop-based architecture. For more information about Apache Storm, see the Storm User Guide.
+
+
+
 Kafka operates on streams of messages. Four main components move messages in and out of Kafka:
  
 

@@ -1,0 +1,34 @@
+Day 1:
+-	Introduction to BigData
+-	HDFS
+o	Introduction
+o	MapReduce
+o	Data storage format (Text, Avro, Parquet, ORC)
+o	Other File Systems (NFS, GlusterFS…)
+Day 2:
+-	HBase
+o	Introduction
+o	Data model
+o	Use cases (how to design DB)
+o	Other NoSQLs (Cassandra, MongoDB, GraphDB – Neo4j)
+Day 3:
+-	Kafka
+o	Introduction
+o	Other message queue
+o	Why and when we chose Kafka
+-	Redis
+o	Introduction
+o	Other in-memory DB
+o	Why and when we chose Redis
+Day 4:
+-	Spark
+o	Introduction
+o	Short introduction to: Spark QL, MLlib, GraphX
+o	Data Frames
+o	Spark Streaming
+Day 5:
+-	Spark (cont.)
+o	Batch processing
+o	Use cases
+o	Other data processing engine (Tez, Flink, Storm&Trident)
+http://www.edureka.co/blog/how-to-set-up-hadoop-cluster-with-hdfs-high-availability/

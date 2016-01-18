@@ -1,0 +1,81 @@
+http://www.tutorialspoint.com/hbase/hbase_overview.htm
+
+HBase Storage Internals
+http://lsd.ls.fi.upm.es/lsd/nuevas-tendencias-en-sistemas-distribuidos/HBase_2.pdf
+http://www.slideshare.net/Hadoop_Summit/hbase-storage-internals
+
+web.cs.wpi.edu/~cs525/s13-MYE/lectures/5/HBase.pptx
+https://cs.brown.edu/courses/cs227/archives/2011/slides/mar14-hbase.pdf
+
+https://cs.brown.edu/courses/cs227/archives/2011/schedule.html
+
+
+http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/9353-login1210_khurana.pdf
+
+This article covered the basics of HBase schema design
+ .
+ I started with a descrip
+-
+tion of the data model and went on to discuss some of the factors to think about 
+while designing HBase tables
+ .
+ There is much more to explore and learn in HBase 
+table design which can be built on top of these fundamentals
+ .
+ The key takeaways 
+from this article are:
+u
+Row keys are the single most important aspect of an HBase table design and 
+determine how your application will interact with the HBase tables
+ .
+ They also 
+affect the performance you can extract out of HBase
+ .
+u
+HBase tables are flexible, and you can store anything in the form of 
+byte[ ].
+u
+Store everything with similar access patterns in the same column family
+ .
+u
+Indexing is only done for the 
+Keys
+ .
+ Use this to your advantage
+ .
+u
+Tall tables can potentially allow you faster and simpler operations, but you trade 
+off atomicity
+ .
+ Wide tables, where each row has lots of columns, allow for atomi
+-
+city at the row level
+ .
+u
+Think how you can accomplish your access patterns in single API calls rather 
+than multiple API calls
+ .
+ HBase does not have cross-row transactions, and you 
+want to avoid building that logic in your client code
+ .
+u
+Hashing allows for fixed length keys and better distribution but takes away the 
+ordering implied by using strings as keys
+ .
+u
+Column qualifiers can be used to store data, just like the cells themselves
+ .
+u
+The length of the column qualifiers impact the storage footprint since you can 
+put data in them
+ .
+ Length also affects the disk and network I/O cost when the data 
+is accessed
+ .
+ Be concise
+ .
+u
+The length of the column family name impacts the size of data sent over the wire 
+to the client (in KeyValue objects)
+ .
+ Be conci

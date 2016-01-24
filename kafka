@@ -1,1 +1,19 @@
 https://cwiki.apache.org/confluence/display/KAFKA/Kafka+papers+and+presentations
+http://www.infoq.com/articles/apache-kafka
+http://www.slideshare.net/vangemga/dsd05-0405jmsa
+http://stackoverflow.com/questions/22897419/difference-between-kafka-and-activemq
+
+
+
+This is too broad to discuss but in my opinion the most important factor about Kafka over ActiveMQ is the throughput. From the wiki page
+
+    Kafka provides an extremely high throughput distributed publish/subscribe messaging system. Additionally, it supports relatively long term persistence of messages to support a wide variety of consumers, partitioning of the message stream across servers and consumers, and functionality for loading data into Apache Hadoop for offline, batch processing.
+
+Also is kafka suitable for zero loss messaging system?
+
+In very brief kafka Guarantees these following :
+1) Messages sent by a producer to a particular topic partition will be appended in the order they are sent.
+2) For a topic with replication factor N, it will tolerate up to N-1 server failures without losing any messages committed to the log.
+
+
+http://www.dis.uniroma1.it/virgi/virgillito-thesis.pdf

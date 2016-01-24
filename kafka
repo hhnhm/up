@@ -1,1 +1,32 @@
 https://cwiki.apache.org/confluence/display/KAFKA/Kafka+papers+and+presentations
+http://www.infoq.com/articles/apache-kafka
+http://blog.cloudera.com/blog/2014/09/apache-kafka-for-beginners/
+http://www.slideshare.net/vangemga/dsd05-0405jmsa
+http://stackoverflow.com/questions/22897419/difference-between-kafka-and-activemq
+
+
+
+This is too broad to discuss but in my opinion the most important factor about Kafka over ActiveMQ is the throughput. From the wiki page
+
+    Kafka provides an extremely high throughput distributed publish/subscribe messaging system. Additionally, it supports relatively long term persistence of messages to support a wide variety of consumers, partitioning of the message stream across servers and consumers, and functionality for loading data into Apache Hadoop for offline, batch processing.
+
+Also is kafka suitable for zero loss messaging system?
+
+In very brief kafka Guarantees these following :
+1) Messages sent by a producer to a particular topic partition will be appended in the order they are sent.
+2) For a topic with replication factor N, it will tolerate up to N-1 server failures without losing any messages committed to the log.
+
+
+Diffs versus Flume
+
+There is significant overlap in the functions of Flume and Kafka. Here are some considerations when evaluating the two systems.
+
+    Kafka is very much a general-purpose system. You can have many producers and many consumers sharing multiple topics. In contrast, Flume is a special-purpose tool designed to send data to HDFS and HBase. It has specific optimizations for HDFS and it integrates with Hadoop’s security. As a result, Cloudera recommends using Kafka if the data will be consumed by multiple applications, and Flume if the data is designated for Hadoop.
+    Those of you familiar with Flume know that Flume has many built-in sources and sinks. Kafka, however, has a significantly smaller producer and consumer ecosystem, and it is not well supported by the Kafka community. Hopefully this situation will improve in the future, but for now: Use Kafka if you are prepared to code your own producers and consumers. Use Flume if the existing Flume sources and sinks match your requirements and you prefer a system that can be set up without any development.
+    Flume can process data in-flight using interceptors. These can be very useful for data masking or filtering. Kafka requires an external stream processing system for that.
+    Both Kafka and Flume are reliable systems that with proper configuration can guarantee zero data loss. However, Flume does not replicate events. As a result, even when using the reliable file channel, if a node with Flume agent crashes, you will lose access to the events in the channel until you recover the disks. Use Kafka if you need an ingest pipeline with very high availability.
+    Flume and Kafka can work quite well together. If your design requires streaming data from Kafka to Hadoop, using a Flume agent with Kafka source to read the data makes sense: You don’t have to implement your own consumer, you get all the benefits of Flume’s integration with HDFS and HBase, you have Cloudera Manager monitoring the consumer and you can even add an interceptor and do some stream processing on the way.
+
+
+
+http://www.dis.uniroma1.it/virgi/virgillito-thesis.pdf

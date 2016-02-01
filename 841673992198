@@ -1,0 +1,4 @@
+STT	Thời điểm đầu	IP đích	Cổng nguồn	Cổng đích	Giao thức ứng dụng	Tên miền truy cập	Lưu lượng download (bytes)
+1	8/1/16 8:53 PM	203.113.131.6	38328	53	dns	vip.media.moison.vn	163
+2	8/1/16 8:38 PM	125.212.193.142	35738	80	http	vip.media.moison.vn	211480
+3	8/1/16 8:38 PM	203.113.131.6	7532	53	dns	vip.media.moison.vn	163

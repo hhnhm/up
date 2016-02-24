@@ -6,3 +6,7 @@ https://docs.oracle.com/javase/7/docs/platform/serialization/spec/serial-arch.ht
 https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#java
 https://github.com/HackathonHackers/programming-ebooks
 https://github.com/apoterenko/information-technology-ebooks.git
+
+http://jeremymanson.blogspot.com/2008/04/immutability-in-java.html
+http://jeremymanson.blogspot.com/2008/07/immutability-in-java-part-2.html
+http://jeremymanson.blogspot.com/2008/07/immutability-in-java-part-3.html

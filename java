@@ -10,3 +10,6 @@ https://github.com/apoterenko/information-technology-ebooks.git
 http://jeremymanson.blogspot.com/2008/04/immutability-in-java.html
 http://jeremymanson.blogspot.com/2008/07/immutability-in-java-part-2.html
 http://jeremymanson.blogspot.com/2008/07/immutability-in-java-part-3.html
+
+
+http://cs.brown.edu/courses/cs161/papers/j-nio-ltr.pdf

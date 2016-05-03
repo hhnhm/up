@@ -1,0 +1,39 @@
+It's quite funny because of all those answers focused too much on programming perspective of Java. I guess there are couple of levels where you need different set of skills / knowledge
+
+    Coder level - you need to know how to read and write Java code. I cannot tell  which one is more important, basically, you need to learn every basic things, as other mention - OOP, multi threading, Collections, Generic API etc. If you are a web-developer, you must be able to use J2EE and all other stuff as people mentioned - trust me, there's nothing special on you if you know how to do those. There 's actually couple books for beginner as well. I said "beginner" because, fluently using those things won't help stand out of Java developer group. Everybody knows how to code, if they couldn't, there would be a GOOGLE for that. Only thing that can help you stand out of Developer group is fluently applying design pattern in practice. Remember, in practice as in you must be very practical, you won't blindly apply pattern here and there just for fun, you know when you need one and why do you need one.
+    Designer level (or someone would say architect level) - You know all of sh!t in Java programming, you can review other's code, you can point out what goes wrong even without trying the code, because data flow in that code is fundamentally wrong. In order to do that, you must always have a very good picture of how things are connected, why do you use this framework other than something else, why do you place this or that here and there; what are risks of doing this / that; what will be impact on developer's life, will they need to learn a new thing etc etc. Again, design pattern plays a very very important role, it's the tool to support you on making a decision, a tool to help you express ideas, also a tool for you to teach others how to write a better code. You start learning out of Java boundary and you can even adopt concept from different programming language.
+    CTO level - You know a lot of thing, you can be pretty hand on on coding but you can also jumps on Devops to fix Linux performance issue. You can also talk an hour about whole platform architecture because you understand every single corner of platform you have built. There's actually no more Java, there will only be performance, why do we use them, why do we even need them, why don't we write something on our own etc etc. I should stop because is way too far away. But, remember, things are connected by design, and design is somewhat derived by design pattern - across languages, across platforms, you will see design pattern in DevOps, in Web System, in networking etc etc, it's practically everywhere.
+
+TLDR (actually, you read them all, I guess) - if you want to build a career in Java or any other programming languages.
+
+    Learn fundamental things (syntax, everything practical things it has, don't really need to jump on debugging JVM performance on day one)
+    Learn how to design, understand principle of design, with design pattern. You will know why do you need to do things in certain ways (and not in certain ways)
+    Try hard :)
+    
+    
+    
+    
+    You know what, you don't need one - because that's highly likely the last thing people care about your resume.
+
+It's not really apple to apple but imagine about those answers
+
+    How could I be a Project Manager if I have no Certification?
+    How could I be a Scrum Master if I have no Certification?
+    etc
+
+To be honest, those questions are pretty "2000". In our current state of art of programming, things change in a matter of day, sticking and be happy with a single certificate literally mean you are so academic and you wouldn't be able to fit in professional world.
+
+In programming, software engineer in general, self-learning drives everything.
+
+    Self-learning drives you to your first language, explore it around, learn your self a lesson. You have a first line of code.
+    Self-learning drives you to design pattern, teaching you how to design components. You know how to read a system
+    Self-learning drives you to read other's codes, teaching you how to design a system on your own. You know how to write a framework.
+    Self-learning drives you to explore a different corner of your creativity. You start writing a new library.
+    Self-learning brings you curiosity, you may want to know how do they "DO" that in another language. You start learning a new programming language.
+
+The same thing applies to job interview, in programming world, it has always been about your experience, your motivation adapting a next new thing rather than stay old with a Certificate.
+
+I don't know if it does answer your question or not, just purely from my experience
+
+    I have never had a Java certification despite of the fact that I have been coding professionally for a decade
+    I have been PMP owner for 4 years even though I took the examination 3 years after my first Project Manager role. I actually have never used that afterwards.

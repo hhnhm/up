@@ -1,0 +1,27 @@
+http://blogs.msmvps.com/jonskeet/2008/08/20/lessons-learned-from-protocol-buffers-part-1-messages-builders-and-immutability/
+
+Messages and Builders
+
+The Protocol Buffers project (or PB for short) is basically another serialization technology, putting emphasis on efficiency, platform neutrality, and backward/forward compatibility. The normal set of steps in using PB is something like this:
+
+    Write a .proto file describing your data in terms of messages.
+    Run protoc to generate C# (and Java/C++ if you so wish).
+    In your application, use the builder associated with the message type to create an instance of a message.
+    Serialize the data to a stream.
+    At some other point in the application (or a different app) deserialize the data.
+
+The idea is that builders are mutable, while the messages they build are immutable. You can use builders either with Set* methods which return the same builder again, or properties which can be used within object initializers. For example:
+// Syntax available in C# 2
+Person john = new Person.Builder()
+    .SetFirstName(“John”)
+    .SetLastName(“Doe”)
+    .Build();
+
+// Using an object initializer
+Person jane = new Person.Builder
+    { FirstName=“Jane”, LastName=“Doe” }
+    .Build();
+
+Of course, you don’t have to do all the building in one expression, it’s just a handy option in many cases.
+
+As you can see, the builder is generated as a nested type of the message. That’s handy, as it means the builder has access to the private members of the message. To avoid lots of data copying we employ popsicle immutability – the builder directly manipulates the message until it’s built, at which point it makes sure that nothing will change it afterwards. If that makes you uncomfortable in terms of it not being “true” immutability, I sympathise – but I also give String as a counterexample; StringBuilder works in exactly this way, modifying a string directly until it exposes it to the outside world.

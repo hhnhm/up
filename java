@@ -15,3 +15,15 @@ http://jeremymanson.blogspot.com/2008/07/immutability-in-java-part-3.html
 http://cs.brown.edu/courses/cs161/papers/j-nio-ltr.pdf
 
 http://www.cs.usfca.edu/~parrt/doc/java/
+http://www.ntu.edu.sg/home/ehchua/programming/index.html#HowTo
+
+
+
+
+
+
+
+
+
+
+

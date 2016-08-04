@@ -17,6 +17,8 @@ http://cs.brown.edu/courses/cs161/papers/j-nio-ltr.pdf
 http://www.cs.usfca.edu/~parrt/doc/java/
 http://www.ntu.edu.sg/home/ehchua/programming/index.html#HowTo
 
+http://www.nurkiewicz.com/2014/11/executorservice-10-tips-and-tricks.html
+http://www.vogella.com/tutorials/JavaConcurrency/article.html
 
 
 

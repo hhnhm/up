@@ -1,3 +1,29 @@
 https://www.tu-ilmenau.de/fileadmin/public/iks/files/lehre/UMTS/08b_UMTS-MM-ws11.pdf
 http://www.csie.ntpu.edu.tw/~yschen/course/97-1/WPC/Chapter%202.pdf?ref=driverlayer.com
 http://www.slideshare.net/aritra321/kris-johnson
+
+http://worldtechie.blogspot.com/2013/04/lte-ecmemm-and-rrc-states.html
+https://vi.scribd.com/document/139019147/LTE-EPC-Workshop
+
+
+
+
+
+
+LTE for UMTS (page 55)
+Mobility Management: The MME keeps track of the location of all UEs in its service
+area. When a UE makes its ﬁrst registration to the network, the MME will create an
+entry for the UE, and signal the location to the HSS in the UE’s home network. The
+MME requests the appropriate resources to be set up in the eNodeB, as well as in
+the S-GW which it selects for the UE. The MME will then keep tracking the UE’s
+location either on the level of eNodeB, if the UE remains connected, i.e. is in active
+communication, or at the level of Tracking Area (TA), which is a group of eNodeBs in
+case the UE goes to idle mode, and maintaining a through connected data path is not
+needed. The MME controls the setting up and releasing of resources based on the UE’s
+activity mode changes. The MME also participates in control signalling for handover
+of an active mode UE between eNodeBs, S-GWs or MMEs. MME is involved in every
+eNodeB change, since there is no separate Radio Network Controller to hide most of
+these events. An idle UE will report its location either periodically, or when it moves
+to another Tracking Area. If data are received from the external networks for an idle
+UE, the MME will be notiﬁed, and it requests the eNodeBs in the TA that is stored
+for the UE to page the UE.

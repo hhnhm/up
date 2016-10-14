@@ -32,3 +32,5 @@ these events. An idle UE will report its location either periodically, or when i
 to another Tracking Area. If data are received from the external networks for an idle
 UE, the MME will be notiﬁed, and it requests the eNodeBs in the TA that is stored
 for the UE to page the UE.
+
+http://www.abcd.lk/sliit/sliit%20books/UMTS%20Networks%20Architecture,%20Mobility%20and%20Services.pdf

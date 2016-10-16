@@ -1,0 +1,13 @@
+Cell_PCH state
+No transmission of signalling and traffic data dedicated to the UE (no DCCH and no DTCH)
+But the RRC connection is still active (UTRAN keeps RNTI for UE) and UE location at a cell level. 
+- a DCCH (and possibly a DTCH) can be reestablished very quickly (this procedure is initiated by sending a paging signal PCH)
+
+
+ URA: UTRAN Registration Area (a small set of cells)
+
+Cell_PCH and URA_PCH states are needed for non real time services to optimise usage of codes and battery consumption. It would not be efficient to allocate permanently a DCH which would be used a very low percentage of time (Web application for example)
+
+ What is the difference between idle mode, Cell_PCH and URA_PCH states?
+In idle mode the location of the UE is not known by the UTRAN, but only by the CN at a Location Area (LA) or Routing Area (RA) level (LA and RA and sets of cells larger than URA, see Subchapter “5.8 Mobility Management” for more details) 
+The paging message PCH must hence be sent in a LA or in a RA when the UE is in idle mode, whereas it only needs to be sent in a cell in Cell_PCH state or in an URA when the UE is in URA_PCH state (hence the paging procedure is much faster).

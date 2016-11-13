@@ -1,0 +1,19 @@
+
+
+Difficult to tell because it depends on the CDR, but in general, a data session in a mobile network refers to a "PDP context". A PDP context is the state kept for a user in the SGSN and GGSN (in a 3G network) and down to the UA (your phone) via RNCs and the NodeBs ("base stations"). The actual protocol used between GGSN and SGSN is a GTP tunnel while from the SGSN to RNCs you have an interface called IuPS.
+
+PDP context typically contains start and end time as well as how many packets and bytes that have been transferred and it is likely this is the information you are seeing in the CDR. There's a bunch of other data in there as well.
+
+When you roam from one NodeB to another your PDP context will remain the same in SGSN. A "smallish" network might have two SGSNs (for redundancy purposes), typically multiple RNCs (10-100) while there are thousands of NodeBs. If you roam within the area of one RNC, the RNC will handle the roaming part and inform other nodes of the move. Note how the GTP tunnel doesn't need to change though as it remains from the SGSN to the same RNC. If you roam between two NodeBs that are connected to different RNCs, the SGSN will be involved as well.
+
+To further complicate things, there is something called 3GDT which stands for Direct Tunneling. This means the GTP tunnel will be directly from the NodeB to the GGSN as to offload traffic from the SGSN. If 3GDT is used, the GGSN will naturally be involved in inter-RNC roaming as well.
+
+Your PDP context is only terminated if you shutdown your phone, loose reception or something goes wrong in the mobile network, so PDP contexts can easily last for days or weeks. Sometimes however, CDRs are chopped up into smaller pieces, despite the PDP context is still active. This is to make it easier to see in the CDR that the user is active, otherwise you might not get any billing data for a subscriber until the PDP context is terminated and since it can potentially live for eternity, that would make billing difficult.
+
+Android is not really involved in this. The OS on your phone only serves to give the baseband chip in your phone some configuration data, like which APN to use and so forth. The rest is handled by the baseband chip, built by suppliers like QualComm. Many chips are used throughout different handsets from different phone producers with different operating systems so compatibility on this layer is really between the baseband chip and the mobile network and not up to the operating system on the handset.
+
+Also see:
+
+    http://en.wikipedia.org/wiki/Radio_Network_Controller
+    http://en.wikipedia.org/wiki/GPRS_core_network
+

@@ -1,0 +1,273 @@
+START,5,Characters,1,N/A,N/A,N/A
+STOP,4,Characters,N/A,1,N/A,N/A
+ATTEMPT,7,Characters,N/A,N/A,1,N/A
+INTERMEDIATE,12,Characters,N/A,N/A,N/A,1
+Gateway Name,23,Characters,2,2,2,2
+Accounting ID,18,64-Bit Hex,3,3,3,3
+Start Time in System Ticks,10,Decimal,4,4,4,4
+Node Time Zone,23,Characters,5,5,5,5
+Start Time (Date),10,mm/dd/yyyy,6,6,6,6
+Start Time (Time),10,hh:mm:ss.d,7,7,7,7
+Time Elapsed from Receipt of Setup Message to Policy Server/SoftSwitch Response,10,Decimal,8,8,8,8
+Time Elapsed from Receipt of Setup Message to Receipt of Alerting/ProcProg,10,Decimal,9,9,9,N/A
+Time Elapsed from Receipt of Setup Message to Service Established,10,Decimal,10,10,N/A,9
+Intermediate Time (Date),10,mm/dd/yyyy,N/A,N/A,N/A,10
+Intermediate Time (Time),10,hh:mm:ss.d,N/A,N/A,N/A,11
+Disconnect Time (Date),10,mm/dd/yyyy,N/A,11,105,N/A
+Disconnect Time (Time),10,hh:mm:ss.d,N/A,12,10,N/A
+Time Elapsed from Receipt of Disconnect to Completion of Call,10,Decimal,N/A,13,11,N/A
+Call Service Duration,10,Decimal,N/A,14,N/A,12
+Call Disconnect Reason,3,Decimal,N/A,15,12,N/A
+Service Delivered,22,Characters,11,16,13,13
+Call Direction,12,Characters,12,17,14,14
+Service Provider,23,Characters,13,18,15,15
+Transit Network Selection Code,5,Characters,14,19,16,16
+Calling Number,30,Characters,15,20,17,17
+Called Number,30,Characters,16,21,18,18
+Extra Called Address Digits,30,Characters,17,22,19,19
+Number of Called Num Translations,1,Decimal,18,23,20,20
+Called Number Before Translation #1,30,Characters,19,24,21,21
+Translation Type 1,1,Decimal,20,25,22,22
+Called Number Before Translation #2,30,Characters,21,26,23,23
+Translation Type 2,1,Decimal,22,27,24,24
+Billing Number,30,Characters,23,28,25,25
+Route Label,23,Characters,24,29,26,26
+Route Attempt Number,5,Decimal,25,30,27,27
+Route Selected,63,Characters,26,31,28,28
+Egress Local Gateway Signaling IP Address,39,Dotted Decimal,27,32,29,29
+Egress Remote Gateway Signaling IP Address,39,Dotted Decimal,28,33,30,30
+Ingress Trunk Group Name,23,Characters,29,34,31,31
+Ingress PSTN Circuit End Point,38,Characters,30,35,32,32
+Ingress IP Circuit End Point,91,Characters,31,36,33,33
+Egress PSTN Circuit End Point,38,Characters,32,37,34,34
+Egress IP Circuit End Point,91,Characters,33,38,35,35
+Ingress Number of Audio Bytes Sent,20,Decimal,N/A,39,N/A,N/A
+Ingress�Number of Audio Packets Sent,20,Decimal,N/A,40,N/A,N/A
+Ingress Number of Audio Bytes Received,20,Decimal,N/A,41,N/A,N/A
+Ingress�Number of Audio Packets Received,20,Decimal,N/A,42,N/A,N/A
+Originating Line Information (OLIP),3,Decimal,34,43,36,54
+Jurisdiction Information Parameter,15,Characters,35,44,37,55
+Carrier Code,5,Characters,36,45,38,36
+Call Group ID,10,32-Bit Hex,37,46,39,37
+Script Log Data,95,Characters,N/A,47,40,N/A
+Time Elapsed from Receipt of Setup Message to Receipt of Exit Message,10,Decimal,38,48,41,95
+Time Elapsed from Receipt of Setup Message to Generation of Exit Message,10,Decimal,39,49,42,96
+Calling Party Nature of Address,3,Decimal,40,50,43,56
+Called Party Nature of Address,3,Decimal,41,51,44,57
+Ingress Protocol Variant Specific Data,3129,Characters,42,52,45,38
+Ingress Signaling Type,2,Decimal,43,53,46,39
+Egress Signaling Type,2,Decimal,44,54,47,40
+Ingress Far End Switch Type,1,Decimal,45,55,48,41
+Egress Far End Switch Type,1,Decimal,46,56,49,42
+Far End Ingress TG Carrier Code,5,Characters,47,57,50,43
+Far End Egress TG Carrier Code,5,Characters,48,58,51,44
+Calling Party Category,4,8 Bit Hex,49,59,52,45
+Dialed Number,30,Characters,50,60,53,46
+Carrier Selection Information,1,Decimal,51,61,54,47
+Called Number Numbering Plan,2,Decimal,52,62,55,48
+Generic Address Parameter,30,Characters,53,63,56,49
+Disconnect Initiator,1,Decimal,N/A,64,57,N/A
+Ingress Number of Packets Recorded as Lost,10,Decimal,N/A,65,N/A,N/A
+Ingress Interarrival Packet Jitter,5,Decimal,N/A,66,N/A,N/A
+Ingress Last Measurement for Latency,5,Decimal,N/A,67,N/A,N/A
+Egress Trunk Group Name,23,Characters,54,68,58,50
+Egress Protocol Variant Specific Data,3129,Characters,55,69,59,51
+Incoming Calling Number,30,Characters,56,70,60,52
+Intermediate Record Reason,1,Decimal,N/A,N/A,N/A,53
+AMA Call Type,3,Characters,57,71,61,58
+Message Billing Index (MBI),3,Characters,58,72,62,59
+Originating LATA,3,Characters,59,73,63,60
+Route Index Used,2,Decimal,60,74,64,N/A
+Calling Party Number Presentation Restriction,1,Decimal,61,75,65,61
+Incoming ISUP Charge Number,30,Characters,62,76,66,62
+Incoming ISUP Charge Number NOA,3,Decimal,63,77,67,63
+Dialed Number NOA,3,Decimal,64,78,68,64
+Ingress Codec Type,6,String,N/A,79,69,N/A
+Egress Codec Type,6,String,N/A,80,70,N/A
+Ingress RTP Packetization Time,3,Decimal,N/A,81,71,N/A
+SBC Call ID,10,32 Bit Hex,65,82,72,65
+Terminated with Script Execution,1,Boolean,N/A,N/A,73,N/A
+Originator Echo Cancellation,1,Decimal,N/A,83,74,N/A
+Terminator Echo Cancellation,1,Decimal,N/A,84,75,N/A
+Charge Flag,1,Decimal,66,85,76,66
+AMA Service Logic Identification,9,Characters,67,86,77,67
+AMA BAF Module,256,Characters,68,87,78,68
+AMA Set Hex AB Indication,1,Boolean,69,88,79,69
+Service Feature ID,3,Characters,70,89,80,70
+FE Parameter,22,Hex (10 bytes),71,90,81,71
+Satellite Indicator,1,Decimal,72,91,82,72
+PSX Billing Information,256,Hex (128 bytes),73,92,83,73
+Originating TDM Trunk Group Type,1,Decimal,74,93,84,74
+Terminating TDM Trunk Group Type,1,Decimal,75,94,85,75
+Ingress Trunk Member Number,5,Decimal,76,95,86,76
+Egress Trunk Group ID,12,Decimal,77,96,87,77
+Egress Switch ID,8,Decimal,78,97,88,78
+Ingress Local ATM Address,0,Reserved,79,98,89,79
+Ingress Remote ATM Address,0,Reserved,80,99,90,80
+Egress Local ATM Address,0,Reserved,81,100,91,81
+Egress Remote ATM Address,0,Reserved,82,101,92,82
+Policy Response Call Type,4,Decimal,83,102,93,83
+Outgoing Route Identification,5,Decimal,84,103,94,84
+Outgoing Message Identification,1,Decimal,85,104,95,85
+Incoming Route Identification,5,Decimal,86,105,96,86
+Calling Name,25,Characters,87,106,97,87
+Calling Name Type,1,Decimal,88,107,98,88
+Incoming Calling Party Numbering Plan,2,Decimal,89,108,99,89
+Outgoing Calling Party Numbering Plan,2,Decimal,90,109,100,90
+Calling Party Business Group ID,10,Decimal,91,110,101,91
+Called Party Business Group ID,10,Decimal,92,111,102,92
+Calling Party Public Presence Directory Number,30,Characters,93,112,103,93
+Elapsed Time from Receipt of Setup Message to Last Call Routing Attempt�,10,Decimal,94,113,104,94
+Billing Number NOA,3,Decimal,95,114,106,97
+Incoming Calling Number NOA,3,Decimal,96,115,107,98
+Egress Trunk Member Number,5,Decimal,97,116,108,99
+Selected Route Type,1,Decimal,98,117,109,100
+Telcordia Long Duration Record Type,1,Decimal,N/A,118,N/A,101
+Time Elapsed from Previous Record,10,Decimal,N/A,119,N/A,102
+Cumulative Route Index,5,Decimal,99,120,110,N/A
+Call Disconnect Reason Transmitted to Ingress,3,Decimal,N/A,121,111,N/A
+Call Disconnect Reason Transmitted to Egress,3,Decimal,N/A,122,112,N/A
+ISDN PRI Calling Party Subaddress,30,Characters,100,123,113,103
+Outgoing Trunk Group Number in EXM,6,Decimal,101,124,114,104
+Ingress Local Gateway Signaling IP Address,39,Dotted Decimal,102,125,115,105
+Ingress Remote Gateway Signaling IP Address,39,Dotted Decimal,103,126,116,106
+Record Sequence Number,10,Decimal,104,127,117,107
+Transmission Medium Requirement (TMR),3,Decimal,105,128,118,108
+Information Transfer Rate (ITR),2,Decimal,106,129,119,109
+User Service Information (USI) User Information,2,Decimal,107,130,120,110
+Unrecognized Raw ISUP Calling Party Category,3,Decimal,108,131,121,111
+Egress RLT Feature Specific Data,598,Characters,109,132,122,112
+Two B-Channel Transfer Feature Specific Data,72,Characters,110,133,123,113
+Calling Party Business Unit,10,Decimal,111,134,124,114
+Called Party Business Unit,10,Decimal,112,135,125,115
+Redirection Feature Specific Data,123,Characters,113,136,126,116
+Ingress RLT Feature Specific Data,598,Characters,114,137,127,117
+PSX Index,2,Decimal,115,138,128,118
+PSX Congestion Level,1,Decimal,116,139,129,119
+PSX Processing Time,5,Decimal,117,140,130,120
+Script Name,23,Characters,118,141,131,121
+Ingress External Accounting Data,128,Characters,119,142,132,122
+Egress External Accounting Data,128,Characters,120,143,133,123
+Egress RTP Packetization Time,3,Decimal,N/A,144,134,N/A
+Egress Number of Audio Bytes Sent,20,Decimal,N/A,145,N/A,N/A
+Egress Number of Audio Packets Sent,20,Decimal,N/A,146,N/A,N/A
+Egress�Number of Audio Bytes Received,20,Decimal,N/A,147,N/A,N/A
+Egress Number of Audio Packets Received,20,Decimal,N/A,148,N/A,N/A
+Egress Number of Packets Recorded as Lost,10,Decimal,N/A,149,N/A,N/A
+Egress Interarrival Packet Jitter,5,Decimal,N/A,150,N/A,N/A
+Egress Last Measurement for Latency,5,Decimal,N/A,151,N/A,N/A
+Ingress Maximum Packet Outage,10,Decimal,N/A,152,N/A,N/A
+Egress Maximum Packet Outage,10,Decimal,N/A,153,N/A,N/A
+Ingress Packet Playout Buffer Quality,16,Hexadecimal,N/A,154,N/A,N/A
+Egress Packet Playout Buffer Quality,16,Hexadecimal,N/A,155,N/A,N/A
+Answer Supervision Type,1,Decimal,121,156,135,124
+Ingress SIP REFER and Replaces Feature Specific Data,70,Characters,122,157,136,125
+Egress SIP REFER and Replaces Feature Specific Data,70,Characters,123,158,137,126
+Network Transfer Feature Specific Data,54,Characters,124,159,138,127
+Call Condition,2,Decimal,125,160,139,128
+Toll Indicator,2,Decimal,126,161,140,129
+Generic Number (Number),30,Characters,127,162,141,130
+Generic Number (Presentation Restriction Indicator),1,Decimal,128,163,142,131
+Generic Number (Numbering Plan),2,Decimal,129,164,143,132
+Generic Number (Nature of Address),3,Decimal,130,165,144,133
+Generic Number (Type),2,Decimal,131,166,145,134
+Final ATTEMPT Indicator,1,Decimal,N/A,N/A,146,N/A
+Originating Trunk Type,2,Hexadecimal,132,167,147,135
+Terminating Trunk Type,2,Hexadecimal,133,168,148,136
+Remote SBC Billing Indicator,1,Decimal,150,169,149,153
+Extra Disconnect Reason,4,Decimal,N/A,N/A,150,N/A
+VPN Calling Private Presence Number,30,Characters,134,170,151,137
+VPN Calling Public Presence Number,30,Characters,135,171,152,138
+External Furnish Charging Info,800,Hexadecimal,136,172,153,139
+Ingress Policing Discards,20,Decimal,N/A,173,N/A,N/A
+Egress Policing Discards,20,Decimal,N/A,174,N/A,N/A
+Announcement ID,5,Decimal,137,175,154,140
+Source Information,2,Decimal,138,176,155,141
+Partition ID,4,Decimal,139,177,156,142
+Network ID,5,Decimal,140,178,157,143
+NCOS,5,Decimal,141,179,158,144
+Ingress SRTP,7,String,N/A,180,N/A,N/A
+Egress SRTP,7,String,N/A,181,N/A,N/A
+ISDN Access Indicator from the Forward Call Indicator,1,Decimal,142,182,159,145
+Call Disconnect Location,2,Decimal,N/A,183,160,N/A
+Call Disconnect Location Transmitted to Ingress,2,Decimal,N/A,184,161,N/A
+Call Disconnect Location Transmitted to Egress,2,Decimal,N/A,185,162,N/A
+Network Call Reference - Call Identity,8,Decimal,143,186,163,146
+Network Call Reference - Signaling Point Code,5,Decimal,144,187,164,147
+Ingress ISUP MIME Protocol Variant Specific Data,3129,Characters,145,188,165,148
+Egress ISUP MIME Protocol Variant Specific Data,3129,Characters,146,189,166,149
+Modem Tone Type,1,Decimal,N/A,190,N/A,N/A
+Modem Tone Signal Level,2,Decimal,N/A,191,N/A,N/A
+Video Codec Data,512,Characters,147,192,167,150
+Video Codec Statistics,512,Characters,N/A,193,N/A,N/A
+SVS Customer,4,Decimal,148,194,168,151
+SVS Vendor (deprecated),0,Decimal,149,195,169,152
+Call to Test PSX,1,BOOLEAN,151,196,170,154
+PSX Overlap Route Requests,2,Decimal,152,197,171,155
+Call Setup Delay,21,Characters,153,198,172,N/A
+Overload Status,3,Decimal,154,199,173,N/A
+RESERVED (Ingress Bicc Info),36,Character,155,200,174,156
+RESERVED (Egress Bicc Info),36,Character,156,201,175,157
+Ingress DSP Data,4,Hexadecimal,N/A,202,N/A,N/A
+Egress DSP Data,4,Hexadecimal,N/A,203,N/A,N/A
+Call Recorded Indicator,3,String,N/A,204,N/A,N/A
+Call Recorded RTP Tx IP Address,15,Character,N/A,205,N/A,N/A
+Call Recorded RTP Tx Port Number,5,Decimal,N/A,206,N/A,N/A
+Call Recorded RTP Rv IP Address,15,Character,N/A,207,N/A,N/A
+Call Recorded RTP Rv Port Number,5,Decimal,N/A,208,N/A,N/A
+MLPP Precedence Level,1,Decimal,157,209,176,158
+RESERVED (MSRP Service Type),1,Decimal,158,210,177,N/A
+RESERVED (NPUKK Special Routing Information),4,8 bit Hex,159,211,178,159
+RESERVED (NPUKK Customer Or Carrier Identification),5,Decimal,160,212,179,160
+RESERVED (NPUKK ServiceType Identifier),3,Decimal,161,213,180,161
+RESERVED (NPSSP Special Handling Information),4,8 bit Hex,162,214,181,162
+RESERVED (NPSSP Service Type Identifier),3,Decimal,163,215,182,163
+RESERVED (Total ITX Charge Units),5,Decimal,N/A,216,N/A,164
+RESERVED (ONI Str),16,Characters,164,N/A,183,N/A
+RESERVED (Suppress ONI),1,Decimal,165,N/A,184,N/A
+Global Charge Reference (GCR),40,Characters,166,217,185,165
+RESERVED (3xx Contact Information),1301,Characters,N/A,N/A,186,N/A
+RESERVED (IP Call Limit at ingress SIP Peer),1,Decimal,167,218,N/A,N/A
+RESERVED (IP Call Limit at ingress IPTG),1,Decimal,168,219,N/A,N/A
+RESERVED (IP BW Limit at ingress IPTG),1,Decimal,169,220,N/A,N/A
+RESERVED (IP Call Limit at egress SIP Peer),1,Decimal,170,221,N/A,N/A
+RESERVED (IP Call Limit at egress IPTG),1,Decimal,171,222,N/A,N/A
+RESERVED (IP BW Limit at egress IPTG),1,Decimal,172,223,N/A,N/A
+RESERVED (PSX Name),24,Characters,173,224,187,166
+RESERVED (No. of PSX tried),4,Decimal,174,225,188,167
+Ingress Inbound R-Factor,2,Decimal,N/A,226,N/A,N/A
+Ingress Outbound R-Factor,2,Decimal,N/A,227,N/A,N/A
+Egress Inbound R-Factor,2,Decimal,N/A,228,N/A,N/A
+Egress Outbound R-Factor,2,Decimal,N/A,229,N/A,N/A
+Media Stream Data,1552,Characters,N/A,230,N/A,N/A
+Media Stream Stats,1414,Characters,N/A,231,N/A,N/A
+Transcode Indicator,1,Boolean,N/A,232,N/A,N/A
+HD Codec Rate,2,Decimal,N/A,233,N/A,N/A
+Remote Ingress Audio RTCP Learned Metrics,1024,String,N/A,234,N/A,N/A
+Remote Egress Audio RTCP Learned Metrics,1024,String,N/A,235,N/A,N/A
+RESERVED (Final Route Label),23,Characters,175,236,189,168
+MTA Information,49,Characters,176,237,190,169
+VBR Common Billing Data,256,Characters,N/A,238,191,N/A
+VBR Route Billing Data,256,Characters,N/A,239,192,N/A
+Access Network Charging Information,130,Characters,177,245,196,170
+Access Transfer Specific Data,29,Characters,178,240,193,171
+Emergency Indicator,1,Boolean,179,241,194,172
+Ingress Dtls-Srtp: Dtls-Srtp status info,1,Digit,N/A,242,N/A,N/A
+Egress Dtls-Srtp: Dtls-Srtp status info,1,Digit,N/A,243,N/A,N/A
+UE Roaming Status,1,Decimal,180,244,195,173
+�Ingress Signaled Session Bandwidth in kbps,6,Decimal,N/A,246,N/A,N/A
+Ingress Rx Computed Session Bandwidth in kbps,6,Decimal,N/A,247,N/A,N/A
+Ingress Tx Computed Session Bandwidth in kbps�,6,Decimal,N/A,248,N/A,N/A
+Ingress Configured Bandwidth Reduction Factor,2,Decimal,N/A,249,N/A,N/A
+Ingress Estimated Bandwidth Reduction Factor,2,Decimal,N/A,250,N/A,N/A
+Egress Signaled Session Bandwidth in kbps,6,Decimal,N/A,251,N/A,N/A
+Egress Rx Computed Session Bandwidth in kbps,6,Decimal,N/A,252,N/A,N/A
+Egress Tx Computed Session Bandwidth in kbps,6,Decimal,N/A,253,N/A,N/A
+Egress Configured Bandwidth Reduction Factor,2,Decimal,N/A,254,N/A,N/A
+Egress Estimated Bandwidth Reduction Factor,2,Decimal,N/A,255,N/A,N/A
+Additional Media Stream Statistics,152 (includes double,String,N/A,256,N/A,N/A
+Ingress Zone Name,23,String,181,257,197,174
+Egress Zone Name,23,String,182,258,198,175
+Ingress Zone Id,6,Decimal,183,259,199,176
+Egress Zone Id,6,Decimal,184,260,200,177
+Video Cac,15,String,N/A,261,N/A,N/A

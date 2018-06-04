@@ -7,3 +7,41 @@ http://aad.tpu.ru/1955/Java%20books/OCA%20Java%20SE%208%20Programmer%20I%20Certi
 https://stackoverflow.com/questions/18893390/splitting-on-comma-outside-quotes
 str.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
+public class CdrRecord {
+    String recordType;
+    long callStartTime;
+    long callDisconnectTime;
+    Map<Integer,String> basePairMap;
+    Map<Integer,String> mediaPairMap;
+}
+public class SonusPm {
+    long logTime;
+    String sonusServer;
+    List<CdrRecord> records;
+}
+
+        List<Map<String, Integer>> mapList = new ArrayList<Map<String, Integer>>(4);
+        List<Map<Integer, String>> mapRList = new ArrayList<Map<Integer, String>>(4);
+        for (int i = 0; i < 4; i++) {
+            mapList.add(new HashMap<String, Integer>());
+            mapRList.add(new HashMap<Integer, String>());
+        }
+
+        BufferedReader br = new BufferedReader(new FileReader("cdr.csv"));
+        String row = null;
+        while ((row = br.readLine()) != null) {
+            String[] tokens = row.split(",");
+            for (int i = 3; i <= 6; i++) {
+                if (!(tokens[i].isEmpty() || tokens[i].equalsIgnoreCase("n/a"))) {
+                    try {
+                        mapList.get(i - 3).put(tokens[0], Integer.parseInt(tokens[i].trim()));
+                        mapRList.get(i - 3).put(Integer.parseInt(tokens[i].trim()), tokens[0]);
+                    } catch (NumberFormatException e) {
+                        e.printStackTrace();
+                        System.out.println(row);
+                    }
+                }
+            }
+        }
+        
+        

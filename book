@@ -8,6 +8,8 @@ https://stackoverflow.com/questions/18893390/splitting-on-comma-outside-quotes
 
 https://github.com/cm45t3r/tmf814
 https://github.com/arazmj/nms-corba/tree/master/src/ex/corba
+https://github.com/zuoxiaosheng/NmsCorbaInterface/tree/master/src
+https://github.com/search?l=Java&q=corba&type=Repositories
 
 str.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
